@@ -1,30 +1,30 @@
-import certified from './assets/certified.svg';
-import coffeeBeans from './assets/coffee-beans.svg';
-import coffee from './assets/coffee.svg';
-import freeDelivery from './assets/free-delivery.svg';
+import certified from './images/certified.svg';
+import coffeeBeans from './images/coffee-beans.svg';
+import coffee from './images/coffee.svg';
+import freeDelivery from './images/free-delivery.svg';
 
-import menu1 from './assets/01.jpg';
-import menu2 from './assets/02.jpg';
-import menu3 from './assets/03.jpg';
-import menu4 from './assets/04.jpg';
-import menu5 from './assets/05.jpg';
-import menu6 from './assets/06.jpg';
-import menu7 from './assets/07.jpg';
-import menu8 from './assets/08.jpg';
+import menu1 from './images/01.jpg';
+import menu2 from './images/02.jpg';
+import menu3 from './images/03.jpg';
+import menu4 from './images/04.jpg';
+import menu5 from './images/05.jpg';
+import menu6 from './images/06.jpg';
+import menu7 from './images/07.jpg';
+import menu8 from './images/08.jpg';
 
-import gallery1 from './assets/gallery-1.jpg';
-import gallery2 from './assets/gallery-2.jpg';
-import gallery3 from './assets/gallery-3.jpg';
-import gallery4 from './assets/gallery-4.jpg';
-import gallery5 from './assets/gallery-5.jpg';
+import gallery1 from './images/gallery-1.jpg';
+import gallery2 from './images/gallery-2.jpg';
+import gallery3 from './images/gallery-3.jpg';
+import gallery4 from './images/gallery-4.jpg';
+import gallery5 from './images/gallery-5.jpg';
 
-import offer1 from './assets/offer-1.jpg';
-import offer2 from './assets/offer-2.jpg';
+import offer1 from './images/offer-1.jpg';
+import offer2 from './images/offer-2.jpg';
 
-import testimonial1 from './assets/testimonial-1.jpg';
-import testimonial2 from './assets/testimonial-2.jpg';
-import testimonial3 from './assets/testimonial-3.jpg';
-import testimonial4 from './assets/testimonial-4.jpg';
+import testimonial1 from './images/testimonial-1.jpg';
+import testimonial2 from './images/testimonial-2.jpg';
+import testimonial3 from './images/testimonial-3.jpg';
+import testimonial4 from './images/testimonial-4.jpg';
 
 export const links = [
   {

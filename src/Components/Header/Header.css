@@ -1,0 +1,33 @@
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    z-index: 2;
+}
+.nav-container{
+    height: calc(var(--header-height) + 1.5rem);
+    background-color: var(--container-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-img{
+    width: 190px;
+}
+.nav-menu{
+    display: flex;
+    gap:2rem;
+}
+.nav-link,.nav-toggle{
+    color: var(--title-color);
+}
+.nav-link{
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-500);
+}
+.nav-toggle{
+    font-size: var(--h2-font-size);
+    display: none;
+}
