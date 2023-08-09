@@ -1,0 +1,33 @@
+.About {
+  padding-block: 7rem;
+}
+.about-grid {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 3rem;
+}
+.Image-wrapper {
+  position: relative;
+  padding-left: 1.5rem;
+}
+.Image-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: -1.125rem;
+  left: 0;
+  background-color: var(--first-color);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.About-detail {
+  margin-block: 1.25rem 2.25rem;
+}
+.About-detail-desc {
+  display: flex;
+  align-items: center;
+}
+.About-detail,
+.About-detail-desc {
+  gap: 0.625rem;
+}
