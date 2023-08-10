@@ -1,0 +1,33 @@
+.Choose-us-section {
+  padding-block: 7rem;
+}
+.Choose-grid {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.choose-img {
+  width: 36px;
+}
+.choose-item {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+.Choose-desc {
+  margin-bottom: 3rem;
+}
+.choose-img-wrapper {
+  border: 2px dashed var(--first-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.Choose-content:last-child {
+  width: calc(100% - 80px);
+}
+.choose-content-title {
+  font-size: var(--largest-font-size);
+}
