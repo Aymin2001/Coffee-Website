@@ -11,7 +11,7 @@ function About() {
           <img src={aboutImg} alt="" />
         </div>
         <div className="About-content">
-          <h2 className="About-title" data-title="About Us">
+          <h2 className="section-title" data-title="About Us">
             Fresh Quality And Organic Tasty Coffee House For You
           </h2>
           <p className="About-Desc">

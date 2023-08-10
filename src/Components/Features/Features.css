@@ -1,0 +1,43 @@
+.Feature-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+.Feature-img {
+  width: 60px;
+  margin-bottom: 1.25rem;
+}
+.Features-items {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: var(--radius);
+  position: relative;
+  transition: 0.5s var(--transition);
+}
+.Features-items::before {
+  content: "";
+  position: absolute;
+  inset: 0.75rem;
+  border: 2px solid var(--first-color);
+  opacity: 0.2;
+  border-radius: inherit;
+}
+.Feature-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.625rem;
+}
+.Feature-shape {
+  position: absolute;
+  width: 120px;
+  right: 1.25rem;
+  top: 3rem;
+  opacity: 0.2;
+}
+.Feature-header {
+  text-align: center;
+  margin-bottom: 3rem !important;
+}
+/*===============
+     * Hover Effect
+    ===============*/
+.Features-items:hover {
+  transform: translateY(-0.5rem);
+}

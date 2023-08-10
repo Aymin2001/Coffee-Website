@@ -119,11 +119,13 @@
   background-color: transparent;
   color: var(--first-color);
 }
-.About-title{
+.section-title{
 margin-bottom: 1rem;
 font-size: var(--big-font-size);
+
 }
-.About-title::before{
+
+.section-title::before{
   content: attr(data-title);
   display: block;
   color: var(--first-color);
