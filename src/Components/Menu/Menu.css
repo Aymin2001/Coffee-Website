@@ -1,0 +1,74 @@
+.Menu-section {
+  background: url(../../assets//images/bg.jpg) center/cover fixed;
+  position: relative;
+}
+.Menu-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--hsla);
+}
+.Menu-header {
+  text-align: center;
+  margin-bottom: 3rem !important;
+}
+.Menu-section {
+  padding-block: 7rem;
+}
+.Menu-grid,
+.section-title,
+.Menu-section {
+  z-index: 1;
+  position: relative;
+}
+.Menu-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+.Menu-items {
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--container-color);
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  transition: 0.5s var(--transition);
+}
+.Menu-Image-Wrapper {
+  width: 80px;
+  height: 80px;
+  border: 2px dashed var(--first-color);
+  padding: 3px;
+}
+.Menu-Image-Wrapper,
+.menu-img {
+  border-radius: 50%;
+}
+.Menu-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0.75rem;
+}
+.Menu-title,
+.Menu-price {
+  color: var(--first-color);
+}
+.Menu-title {
+  font-size: var(--large-font-size);
+  margin-bottom: 0.25rem;
+}
+.Menu-price {
+  border-left: 2px dashed var(--first-color);
+  padding-left: 1.25rem;
+  font-size: var(--larger-font-size);
+  font-weight: var(--weight-600);
+}
+/*===============
+     * Hover Effect
+    ===============*/
+.Menu-items:hover {
+  transform: translateY(-0.5rem);
+}
