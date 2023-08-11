@@ -1,0 +1,75 @@
+.Gallery-header {
+  text-align: center;
+  margin-bottom: 3rem !important;
+}
+.Gallery-section {
+  padding-block: 6rem;
+}
+.Gallery-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.Gallery-items {
+  position: relative;
+}
+.Gallery-items::before {
+  content: "";
+  position: absolute;
+  inset: 0.5rem;
+  border-radius: var(--radius);
+  background-color: var(--first-color);
+  opacity: 0;
+
+  transform: scaleY(0);
+  transition: 0.4s var(--transition);
+}
+.Gallery-img,
+.Gallery-title {
+  border-radius: var(--radius);
+}
+.Gallery-title,
+.Gallery-icon {
+  font-size: var(--largest-font-size);
+  position: absolute;
+  opacity: 0;
+}
+.Gallery-icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--title-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--first-color);
+  opacity: 0;
+  margin-top: 3rem;
+  transition: 0.3s var(--transition);
+  transition-delay: 0.3s;
+}
+.Gallery-title {
+  bottom: 0;
+  background-color: var(--container-color);
+  inset-inline: 1.75rem;
+  text-align: center;
+  padding-block: 1.25rem;
+  transition: 0.5s var(--transition);
+}
+/*===============
+     * Hover Effect
+    ===============*/
+.Gallery-items:hover::before {
+  opacity: 0.7;
+  transform: scaleY(1);
+}
+.Gallery-items:hover .Gallery-icon,
+.Gallery-items:hover .Gallery-title {
+  opacity: 1;
+}
+.Gallery-items:hover .Gallery-icon {
+  margin-top: 0;
+}
+.Gallery-items:hover .Gallery-title {
+  bottom: 1.75rem;
+}
