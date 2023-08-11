@@ -5,6 +5,7 @@ import About from './Components/About/About';
 import Features from './Components/Features/Features';
 import Menu from './Components/Menu/Menu';
 import Choose from './Components/Choose/Choose';
+import Stats from './Components/Stats/Stats';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
   <Features/>
   <Menu/>
   <Choose/>
+  <Stats/>
     </>
   );
 }

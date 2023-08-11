@@ -1,3 +1,6 @@
+.Features-Section{
+padding-bottom: 4rem;
+}
 .Feature-grid {
   grid-template-columns: repeat(4, 1fr);
 }

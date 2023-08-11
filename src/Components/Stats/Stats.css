@@ -1,0 +1,53 @@
+.Stats-section {
+  background-color: var(--container-color);
+  padding-block: 6rem;
+}
+.Stats-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+.Stats-section {
+  padding-bottom: 5rem;
+}
+.Stats-img {
+  width: 60px;
+}
+.grid-items {
+  text-align: center;
+}
+.Stats-Image-Wrapper {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  margin-inline: auto;
+  position: relative;
+}
+.Stats-Image-Wrapper::before {
+  content: "";
+  position: absolute;
+  top: -1.25rem;
+  left: -1.25rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  opacity: 0.2;
+  transition: 0.5s var(--transition);
+}
+.Stats-no {
+  color: var(--title-color);
+  font-size: var(--bigger-font-size);
+  font-weight: var(--weight-600);
+  margin-block: 1rem 0.75rem;
+}
+.Stats-title {
+  color: var(--first-color);
+  font-size: var(--larger-font-size);
+}
+/*===============
+     * Hover Effect
+    ===============*/
+.grid-items:hover .Stats-Image-Wrapper::before {
+  left: 0;
+  top: 0;
+}
