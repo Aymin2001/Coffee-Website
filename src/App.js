@@ -10,6 +10,7 @@ import Gallery from './Components/Gallery/Gallery';
 import Offer from './Components/Offer/Offer';
 import Team from './Components/Team/Team';
 import Reservation from './Components/Reservation/Reservation';
+import Testimonals from './Components/Testimonals/Testimonals';
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
   <Offer/>
   <Team/>
   <Reservation/>
+  <Testimonals/>
     </>
   );
 }
