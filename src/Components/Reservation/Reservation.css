@@ -1,0 +1,55 @@
+.Reservation-header {
+  text-align: center;
+  margin-bottom: 3rem !important;
+}
+.Reservation-form,
+.Reservation-section {
+  position: relative;
+}
+.Reservation-section {
+  padding: 3rem 3rem;
+  background-color: var(--container-color);
+}
+.Reservation-form {
+  grid-template-columns: repeat(3, 1fr);
+  z-index: 10;
+}
+.form-input-textarea,
+.reservation-btn {
+  grid-column: 1/-1;
+}
+.form-input {
+  width: 100%;
+  color: var(--title-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--first-color);
+  padding: 1rem 1.25rem;
+}
+.reservation-btn,
+.form-input {
+  border-radius: var(--radius);
+}
+.form-input::placeholder {
+  color: var(--first-color-light);
+}
+.reservation-btn {
+  justify-self: center;
+}
+.btn-flex {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.Shape-2,
+.Shape-3 {
+  position: absolute;
+  width: 180px;
+}
+.Shape-2 {
+  right: 1.25rem;
+  top: 2.5rem;
+}
+.Shape-3 {
+  left: 1.25rem;
+  bottom: 0.25rem;
+}
