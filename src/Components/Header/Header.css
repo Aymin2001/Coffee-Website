@@ -1,34 +1,55 @@
-.header{
-    position:absolute;
-    top: 0;
-    left: 0;
-   
-    width: 100%;
-    z-index: 2;
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 2;
+  position: fixed;
 }
-.nav-container{
-    height: calc(var(--header-height) + 1.5rem);
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
+.nav-container {
+  height: calc(var(--header-height) + 1.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: transparent;
 }
-.nav-img{
-    width: 190px;
+.nav-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw; /* Full width of the viewport */
+  height: 100%;
+  background-color: var(--container-color); /* Set background color here */
+  z-index: -1; /* Place it behind the content */
 }
-.nav-menu{
-    display: flex;
-    gap:2rem;
+.nav-img {
+  width: 190px;
 }
-.nav-link,.nav-toggle{
-    color: var(--title-color);
+.nav-menu {
+  display: flex;
+  gap: 2rem;
 }
-.nav-link{
-    font-size: var(--large-font-size);
-    font-weight: var(--weight-500);
+.nav-link,
+.nav-toggle {
+  color: var(--title-color);
+  cursor: pointer;
 }
-.nav-toggle{
-    font-size: var(--h2-font-size);
-    display: none;
+.nav-link {
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-500);
+}
+.nav-toggle {
+  font-size: var(--h2-font-size);
+  display: none;
+}
+/*===============
+     * Hover Effect
+    ===============*/
+.nav-link:hover,
+.active {
+  color: var(--first-color);
 }

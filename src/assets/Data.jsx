@@ -33,27 +33,27 @@ export const links = [
   },
   {
     name: 'About',
-    path: 'about',
+    path: 'About',
   },
   {
     name: 'Features',
-    path: 'features',
+    path: 'Features',
   },
   {
     name: 'Menu',
-    path: 'menu',
+    path: 'Menu',
   },
   {
     name: 'Gallery',
-    path: 'gallery',
+    path: 'Gallery',
   },
   {
     name: 'Chefs',
-    path: 'team',
+    path: 'Team',
   },
   {
     name: 'Testimonials',
-    path: 'testimonials',
+    path: 'Testimonals',
   },
 ];
 
