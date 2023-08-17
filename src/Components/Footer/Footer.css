@@ -170,10 +170,14 @@
     padding: 0.5rem 1.25rem;
     overflow: scroll;
 
-    max-height: 220px;
+    max-height: 0;
     visibility: hidden;
+    transform: 0.3s var(--transition);
   }
-
+  .show-menu {
+    visibility: visible;
+    max-height: 220px;
+  }
   .nav-link {
     color: var(--bg-color);
   }
