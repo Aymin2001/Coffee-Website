@@ -36,7 +36,7 @@ function About() {
               Have Amazing view and work environment.
             </p>
           </div>
-          <a href="#team" className="btn">
+          <a href="#Team" className="btn">
             Our Experts
           </a>
         </div>

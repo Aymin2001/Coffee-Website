@@ -16,8 +16,8 @@ const Home = () => {
                         There are many variations of passages available but the majority have suffered alteration in some form y injected humour orrandomised words.
                     </p>
                     <div className='home-btns'>
-                        <a href="#menu" className='btn'>Check Menu</a>
-                        <a href="#reservation" className='btn book-btn'>Book Table</a>
+                        <a href="#Menu" className='btn'>Check Menu</a>
+                        <a href="#Reservation" className='btn book-btn'>Book Table</a>
                     </div>
                 </div>
             </div>
