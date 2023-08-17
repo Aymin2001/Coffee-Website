@@ -8,7 +8,7 @@ function About() {
     <section className="About" id="About">
       <div className="about-grid container grid">
         <div className="Image-wrapper">
-          <img src={aboutImg} alt="" />
+          <img className='about-img' src={aboutImg} alt="" />
         </div>
         <div className="About-content">
           <h2 className="section-title" data-title="About Us">

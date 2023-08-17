@@ -14,7 +14,7 @@ import Testimonals from './Components/Testimonals/Testimonals';
 import Footer from './Components/Footer/Footer';
 function App() {
   return (
-    <>
+    <div className='App'>
     <Header/>
   <Home/>
   <About/>
@@ -28,7 +28,7 @@ function App() {
   <Reservation/>
   <Testimonals/>
   <Footer/>
-    </>
+    </div>
   );
 }
 

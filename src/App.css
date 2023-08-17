@@ -2,112 +2,118 @@
 #GOOGLE FONTS 
 ===================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Lobster+Two:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,700;1,200;1,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Lobster+Two:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,700;1,200;1,400;1,600&display=swap");
 /*=================================== 
 #CSS VARIABLES
 ===================================*/
 
 :root {
-    --header-height:5rem ;
-  
-    /*===============
+  --header-height: 5rem;
+
+  /*===============
      * Colors
     ===============*/
-  
-    --first-color:hsl(27,34%,59%) ;
-    --first-color-light:hsl(42,13%,34%) ;
-    --title-color:hsl(0,0%,100%) ;
-    --text-color: hsl(0,0%,67%);
-    --bg-color: hsl(0,0%,8%);
-    --container-color:hsl(0,0%,6%) ;
-    --hsla: hsla(0,0%,0%,0.75);
-  
-    /*===============
+
+  --first-color: hsl(27, 34%, 59%);
+  --first-color-light: hsl(42, 13%, 34%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 67%);
+  --bg-color: hsl(0, 0%, 8%);
+  --container-color: hsl(0, 0%, 6%);
+  --hsla: hsla(0, 0%, 0%, 0.75);
+
+  /*===============
      * Typography
     ===============*/
-  
-    --body-font:'Kanit' ,san-sarif;
-    --second-font:'Lobster Two',cursive ;
-  
-    --biggest-font-size: 4.125rem;
-    --bigger-font-size:3.125rem ;
-    --big-font-size: 2.5rem;
-    --h1-font-size: 1.875rem;
-    --h2-font-size: 1.75rem;
-    --h3-font-size: 1.5rem;
-    --largest-font-size:1.375rem ;
-    --larger-font-size: 1.25rem;
-    --large-font-size: 1.125rem;
-    --normal-font-size: 1rem ;
-  
-    --weight-400: 400;
-    --weight-500: 500;
-    --weight-600: 600;
-    --weight-700: 700;
-  
-    /*===============
+
+  --body-font: "Kanit", san-sarif;
+  --second-font: "Lobster Two", cursive;
+
+  --biggest-font-size:clamp(2rem, 1.125rem + 4vw, 4.125rem);
+  --bigger-font-size:clamp(1.875rem, 1.3603rem + 2.3529vw, 3.125rem);
+  --big-font-size: clamp(1.75rem, 1.4412rem + 1.4118vw, 2.5rem);
+  --h1-font-size: 1.875rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+  --largest-font-size: 1.375rem;
+  --larger-font-size: 1.25rem;
+  --large-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+
+  /*===============
      * Border-radius
     ===============*/
-  
-    --radius: 0.5rem;
-  
-    /*===============
+
+  --radius: 0.5rem;
+
+  /*===============
      * Transition
     ===============*/
-  
-    --transition: ease-in-out;
-  }
-  
-  /*=================================== 
+
+  --transition: ease-in-out;
+}
+
+/*=================================== 
   #RESET
   ===================================*/
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  input ,textarea,body,button{
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-  }
-  body{
-    color: var(--text-color);
-    background-color: var(--bg-color);
-  }
-  h1,h2,h3{
-    font-family: var(--second-font);
-    color: var(--title-color);
-    font-weight: var(--weight-400);
-  }
-  ul{
-    list-style: none;
-  }
-  p{
-    line-height: 1.8;
-  }
-  a{
-    text-decoration: none;
-  }
-  input,textarea{
-    border: none;
-    outline: none;
-  }
-  img{
-    max-width: 100%;
-  }
-  /*=================================== 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+textarea,
+body,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--second-font);
+  color: var(--title-color);
+  font-weight: var(--weight-400);
+}
+ul {
+  list-style: none;
+}
+p {
+  line-height: 1.8;
+}
+a {
+  text-decoration: none;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+img {
+  max-width: 100%;
+}
+/*=================================== 
   #RESUABLE CSS CLASSES
   ===================================*/
-.container{
+.container {
   max-width: 1200px;
   margin-inline: auto;
-  padding-inline:0.75rem ;
+  padding-inline: 0.75rem;
 }
-.grid{
+.grid {
   display: grid;
   gap: 1.5rem;
 }
-.btn{
+.btn {
   display: inline-block;
   color: var(--title-color);
   background-color: var(--first-color);
@@ -115,17 +121,16 @@
   padding: 1rem 1.5rem;
   border-radius: var(--radius);
 }
-.btn:hover{
+.btn:hover {
   background-color: transparent;
   color: var(--first-color);
 }
-.section-title{
-margin-bottom: 1rem;
-font-size: var(--big-font-size);
-
+.section-title {
+  margin-bottom: 1rem;
+  font-size: var(--big-font-size);
 }
 
-.section-title::before{
+.section-title::before {
   content: attr(data-title);
   display: block;
   color: var(--first-color);
@@ -134,3 +139,7 @@ font-size: var(--big-font-size);
   letter-spacing: 2px;
   margin-bottom: 0.5rem;
 }
+.App {
+  overflow: hidden;
+}
+

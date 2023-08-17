@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css'
+
 const Home = () => {
     return (
         <section className='home' id='home'>
@@ -9,7 +10,7 @@ const Home = () => {
                         Welcome To Coffero!
                     </span>
                     <h1 className='home-title'>
-                        Discover Amazing Coffe House &  Get Energy
+                        Discover Amazing Coffee House &  Get Energy
                     </h1>
                     <p className='home-desc'>
                         There are many variations of passages available but the majority have suffered alteration in some form y injected humour orrandomised words.

@@ -43,7 +43,7 @@
   font-weight: var(--weight-500);
 }
 .nav-toggle {
-  font-size: var(--h2-font-size);
+  font-size: var(--big-font-size);
   display: none;
 }
 /*===============

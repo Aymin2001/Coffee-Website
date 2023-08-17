@@ -119,3 +119,143 @@
 .CopyRight-text span {
   color: var(--first-color);
 }
+/* --------------Media Query---------------------------- */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .Feature-grid,
+  .Footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Footer-grid {
+    row-gap: 3rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  :root {
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.375rem;
+    --h3-font-size: 1.25rem;
+    --largest-font-size: 1.25rem;
+    --larger-font-size: 1.125rem;
+    --large-font-size: 1rem;
+    --normal-font-size: 0.9375rem;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .btn {
+    padding: 0.75rem 1.25rem;
+  }
+  .home-btns {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+  .nav {
+    height: var(--header-height);
+  }
+  .nav-img,
+  .Footer-logo-img {
+    width: 140px;
+  }
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    inset-inline: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--title-color);
+    padding: 0.5rem 1.25rem;
+    overflow: scroll;
+
+    max-height: 220px;
+    visibility: hidden;
+  }
+
+  .nav-link {
+    color: var(--bg-color);
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .about-grid,
+  .Menu-grid,
+  .Choose-grid {
+    grid-template-columns: 1fr;
+  }
+  .Choose-grid {
+    row-gap: 3rem;
+  }
+  .Stats-grid,
+  .Gallery-grid,
+  .Team-grid,
+  .Reservation-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Stats-grid {
+    row-gap: 3rem;
+  }
+  .Testimonal-icon {
+    bottom: -1.25rem;
+  }
+}
+@media screen and (max-width: 755px) {
+  .container {
+    max-width: 540px;
+  }
+  .Offer-Item {
+    grid-template-columns: 1fr;
+  }
+  .Offer-Img-Wrapper {
+    margin-right: 0;
+  }
+  .Offer-Image {
+    vertical-align: middle;
+  }
+  .Testimonal-icon {
+    bottom: -1.25rem;
+  }
+  .Footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Image-wrapper {
+    padding-left: 1rem;
+  }
+  .Image-wrapper::before {
+    bottom: -0.625rem;
+  }
+  .Feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .Menu-items {
+    grid-template-columns: 1fr;
+  }
+  .Menu-Image-Wrapper {
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+  }
+  .Stats-grid,
+  .Gallery-grid,
+  .Team-grid,
+  .Reservation-form {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 350px) {
+  .form-input {
+    padding: 0.75rem 1rem;
+  }
+  .Testimonals-quote {
+    padding: 1.5rem 1.25rem 2rem;
+  }
+  .Testimonals-Image-Wrapper {
+    width: 70px;
+    height: 70px;
+    margin-inline: 1rem;
+  }
+}

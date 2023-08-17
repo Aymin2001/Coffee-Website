@@ -12,6 +12,8 @@ import {
 } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
 import logo from "../../assets/images/logo.png";
+
+
 function Footer() {
   return (
     <section className="Footer-section" id="Footer">

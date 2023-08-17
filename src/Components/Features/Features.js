@@ -2,6 +2,7 @@ import React from "react";
 import { features } from "../../assets/Data";
 import shape from "../../assets/images/shape.png";
 import "./Features.css";
+
 function Features() {
   return (
     <section className="Features-Section" id="Features">
